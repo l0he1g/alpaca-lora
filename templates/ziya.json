@@ -1,0 +1,6 @@
+{
+    "description": "Template used by Ziya-LoRA.",
+    "prompt_input": "参考上下文回答以下问题。问题：\n{instruction}\n\n### 上下文：\n{input}\n\n### 回答：\n",
+    "prompt_no_input": "回答以下问题.\n\n### 问题：\n{instruction}\n\n### 回答：\n",
+    "response_split": "### 回答："    
+}

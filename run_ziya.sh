@@ -1,0 +1,17 @@
+python finetune.py \
+    --base_model '/root/model/Ziya-LLaMA-13B-Pretrain-v1' \
+    --data_path '/root/data/belle/train_1M_CN/Belle_open_source_1M.json' \
+    --output_dir '/root/model/ziya-lora-v1' \
+    --batch_size 64 \
+    --micro_batch_size 4 \
+    --num_epochs 3 \
+    --learning_rate 1e-4 \
+    --cutoff_len 512 \
+    --val_set_size 2000 \
+    --lora_r 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0.05 \
+    --lora_target_modules '[q_proj,v_proj]' \
+    --train_on_inputs \
+    --prompt_template_name ziya \
+    --group_by_length
