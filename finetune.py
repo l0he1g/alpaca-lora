@@ -169,7 +169,7 @@ def train(
             ]  # could be sped up, probably
         return tokenized_full_prompt
 
-    model = prepare_model_for_int8_training(model)
+    #model = prepare_model_for_int8_training(model)
 
     config = LoraConfig(
         r=lora_r,
